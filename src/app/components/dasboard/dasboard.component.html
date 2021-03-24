@@ -6,7 +6,6 @@
         <mat-card-header>
           <mat-card-title>
             {{card.title}}
-            <p class="server-status" style="color: {{card.statusColor}}"> {{card.content}} </p>
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
@@ -16,9 +15,9 @@
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
-<!--        <mat-card-content class="dashboard-card-content">-->
-<!--          <div></div>-->
-<!--        </mat-card-content>-->
+        <mat-card-content class="dashboard-card-content">
+          <div class="server-status" style="color: {{card.statusColor}}"> {{card.content}}</div>
+        </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
