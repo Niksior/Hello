@@ -13,10 +13,10 @@ export class DasboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Minecraft Java ED', cols: 1, rows: 1, content: 'Online', statusColor: 'green' },
-          { title: 'Minecraft Bedrock ED', cols: 1, rows: 1, content: 'Offline', statusColor: 'red' },
-          { title: 'API', cols: 1, rows: 1, content: 'Offline', statusColor: 'red' },
-          { title: 'Teamspeak', cols: 1, rows: 1, content: 'Offline', statusColor: 'red' },
+          { title: 'Minecraft Java ED', cols: 1, rows: 2, content: 'Online', statusColor: 'green' },
+          { title: 'Minecraft Bedrock ED', cols: 1, rows: 2, content: 'Offline', statusColor: 'red' },
+          { title: 'API', cols: 1, rows: 2, content: 'Offline', statusColor: 'red' },
+          { title: 'Teamspeak', cols: 1, rows: 2, content: 'Offline', statusColor: 'red' },
         ];
       }
 
